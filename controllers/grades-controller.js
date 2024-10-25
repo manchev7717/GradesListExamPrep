@@ -2,7 +2,7 @@ function setup(app, grades) {
   app.get('/', function(req, res) {
     let model = {
       title: "My grades",
-      msg: "My Grades",
+      msg: "My Grades ops",
       grades: grades
     };
     res.render('home', model);
@@ -13,7 +13,7 @@ function setup(app, grades) {
   });
 
   app.get('/my-grades', function(req, res) {
-    let model = { title: "My Grades", grades };
+    let model = { title: "My Grades ops", grades };
     res.render('my-grades', model);
   });
 
